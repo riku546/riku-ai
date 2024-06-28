@@ -6,6 +6,6 @@ export type Methods = DefineMethods<{
   };
   post:{
     reqBody:{aozoraUrl:string}
-    resBody: string
+    resBody: string;
   }
 }>;
