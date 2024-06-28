@@ -7,3 +7,4 @@ export const novelUseCase = {
       return aozoraUrl;
     }),
 };
+//
