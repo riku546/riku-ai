@@ -6,7 +6,7 @@ import { DELETE, GET, POST } from './utils';
 
 test(GET(noCookieClient.novel), async () => {
 
-  const res = await noCookieClient.$get();
+  const res = await noCookieClient.novel.$get();
 
   expect(res).toEqual('Hello');
 
