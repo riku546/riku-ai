@@ -17,7 +17,7 @@ test(GET(noCookieClient.novel), async () => {
 
 
 test(POST(noCookieClient.novel), async () => {
-  const aozoraUrl = 'https://www.aozora.gr.jp/cards/000879/files/127_15260.html'
+  const aozoraUrl = noCookieClient.novel.$path()
   const res = await noCookieClient.novel.$post({ body: { aozoraUrl } });
 
   expect(typeof res).toEqual('string');

@@ -9,8 +9,6 @@ export const novelUseCase = {
       const html = decode(Buffer.from(buffer), 'Shift_JIS');
       const $ = load(html)
       const body = $('.main_text')
-
-
       return $('body').text();
 
     }),
